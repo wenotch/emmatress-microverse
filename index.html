@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Emmanuel and Tressor</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <main>
-      <header class="header">
-        <h1 id="title">Our Survey Form</h1>
-        <p id="description">
-          Thank you for taking out your time to complete the form.
-        </p>
-      </header>
-      <form id="survey-form" action="">
-        <div class="form-group">
-          <label for="name" id="name-label">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email" id="email-label"> Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
+        <header class="header">
+            <h1 id="title">Our Survey Form</h1>
+            <p id="description">
+                Thank you for taking out your time to complete the form.
+            </p>
+        </header>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label"> Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
 
-        <div class="form-group">
-          <label for="phoneNumber" id="number-label">Age</label>
-          <input
-            type="number"
-            name="phoneNumber"
-            id="number"
-            class="form-control"
-            placeholder="Enter Your Phone number"
-            min="18"
-            max="50"
-            required
-          />
-        </div>
+            <div class="form-group">
+                <label for="phoneNumber" id="number-label">Age</label>
+                <input type="number" name="phoneNumber" id="number" class="form-control" placeholder="Enter Your Phone number" min="18" max="50" required />
+            </div>
 
-        <div class="form-group">
-          <label for="number" id="number-label"
-            >Age <span>(optional)</span></label
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span>(optional)</span></label
           >
           <input
             type="digit"
@@ -92,7 +70,7 @@
               />
               Definitely
             </label>
-            <label>
+                <label>
               <input
                 name="user-recommend"
                 value="maybe"
@@ -113,34 +91,28 @@
         <div class="form-group">
           <p>Which of these frameworks have you worked with?</p>
           <label>
-            <input type="checkbox" name="React" value="React" /><span
+            <input type="checkbox" name="React" value="React" class="input-check"/><span
               >React</span
             >
           </label>
-          <label>
-            <input type="checkbox" name="Vue" value="React" /><span>Vue</span>
+                <label>
+            <input type="checkbox" name="Vue" value="Vue" class="input-check"/><span>Vue</span>
           </label>
-          <label>
-            <input type="checkbox" name="React" value="Anguloar" /><span
+                <label>
+            <input type="checkbox" name="React" value="Anguloar" class="input-check"/><span
               >Anguloar</span
             >
           </label>
-        </div>
-        <div class="form-group">
-          <p>Any Comments?</p>
+            </div>
+            <div class="form-group">
+                <p>Any Comments?</p>
 
-          <textarea
-            placeholder="Do you have any comments"
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <button id="submit">Submit</button>
-        </div>
-      </form>
+                <textarea placeholder="Do you have any comments" name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
     </main>
     <!--
 
@@ -155,5 +127,6 @@
 
     -->
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
