@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Emmanuel and Tressor</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <main>
-        <header class="header">
-            <h1 id="title">Emmanuel and Tresor Awesome Survey Form</h1>
-            <p id="description">
-                Thank you for taking out your time to complete the form.
-            </p>
-        </header>
-        <form id="survey-form" action="">
-            <div class="form-group">
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required />
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label"> Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
-            </div>
+      <header class="header">
+        <h1 id="title">Emmanuel and Tresor Awesome Survey Form</h1>
+        <p id="description">
+          Thank you for taking out your time to complete the form.
+        </p>
+      </header>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label"> Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="phoneNumber" id="number-label">Phone Number</label>
-                <input type="number" name="phoneNumber" id="number" class="form-control" placeholder="Enter Your Phone number" min="10" max="19" required/>
-            </div>
+        <div class="form-group">
+          <label for="phoneNumber" id="number-label">Phone Number</label>
+          <input
+            type="number"
+            name="phoneNumber"
+            id="number"
+            class="form-control"
+            placeholder="Enter Your Phone number"
+            min="10"
+            max="19"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="number" id="number-label">Age <span>(optional)</span></label>
-                <input type="digit" name="age" id="number" class="form-control" min="18" max="35" placeholder="Enter Your Age" />
-            </div>
+        <div class="form-group">
+          <label for="number" id="number-label"
+            >Age <span>(optional)</span></label
+          >
+          <input
+            type="digit"
+            name="age"
+            id="number"
+            class="form-control"
+            min="18"
+            max="35"
+            placeholder="Enter Your Age"
+          />
+        </div>
 
-            <div class="form-group">
-                <p>Which option best describes your current role ?</p>
-                <select name="track" id="dropdown">
-                  <option value="student" value required>Select an option</option>
-                  <option value="student">Student</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="doctor">Doctor</option>
-                  <option value="other">Other</option>
-                </select>
-            </div>
+        <div class="form-group">
+          <p>Which option best describes your current role ?</p>
+          <select name="track" id="dropdown">
+            <option value="student" value required>Select an option</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="doctor">Doctor</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-            <div class="form-group">
-                <p>Would you recommend Microverse to a friend ?</p>
-                <label>
-                  <input
-                    name="user-recommend"
-                    value="definitely"
-                    type="radio"
-                    class="input-radio"
-                    checked
-                 />
-                  Definitely
-                </label>
-                <label>
-                  <input
-                    name="user-recommend"
-                    value="maybe"
-                    type="radio"
-                    class="input-radio"
-                  />Maybe</label
-                >
-                <label
-                  ><input
-                    name="user-recommend"
-                    value="not-sure"
-                    type="radio"
-                    class="input-radio"
-                  />Not sure</label
-                >
-            </div>
-        </form>
+        <div class="form-group">
+          <p>Would you recommend Microverse to a friend ?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Which of these frameworks have you worked with?</p>
+          <label>
+            <input type="checkbox" name="React" value="React" /><span
+              >React</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" name="Vue" value="React" /><span>Vue</span>
+          </label>
+          <label>
+            <input type="checkbox" name="React" value="Anguloar" /><span
+              >Anguloar</span
+            >
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any Comments?</p>
+          <label> Message </label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
     </main>
     <!--
 
@@ -92,6 +147,5 @@
 
     -->
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
